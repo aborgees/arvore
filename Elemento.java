@@ -1,10 +1,10 @@
 public class Elemento<TIPO> {
 
 	private TIPO valor;
-	private Elemen<TIPO> esquerda;
-	private Elemen<TIPO> direita;
+	private Elemento<TIPO> esquerda;
+	private Elemento<TIPO> direita;
 
-	public Elemen(TIPO NovoValor)	{
+	public Elemento(TIPO NovoValor)	{
 		this.valor = NovoValor;
 		this.esquerda = null;
 		this.direita = null;
@@ -18,19 +18,19 @@ public class Elemento<TIPO> {
 		this.valor = valor;
 	}
 
-	public Elemen<TIPO> getEsquerda() {
+	public Elemento<TIPO> getEsquerda() {
 		return esquerda;
 	}
 
-	public void setEsquerda(Elemen<TIPO> esquerda) {
+	public void setEsquerda(Elemento<TIPO> esquerda) {
 		this.esquerda = esquerda;
 	}
 
-	public Elemen<TIPO> getDireita() {
+	public Elemento<TIPO> getDireita() {
 		return direita;
 	}
 
-	public void setDireita(Elemen<TIPO> direita) {
+	public void setDireita(Elemento<TIPO> direita) {
 		this.direita = direita;
 	}
 }
